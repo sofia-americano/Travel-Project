@@ -11,12 +11,27 @@ body {
 
 .grid {
     display: grid;
+    grid-gap: 64px
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.grid-3-columns-with-first-narrow {
     grid-template-columns: 1fr 2fr 2fr;
 }
 
 section {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 100px 0;
 }
 
 header {
@@ -67,13 +82,44 @@ header a {
     background: white;
 }
 
+main {
+    background-color: white;
+}
+
+main h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    letter-spacing: 5px;
+    color: #80a3a2;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+main h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    color: #80a3a2;
+    margin: 0;
+}
+
+main p {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #80a3a2;
+    opacity: 0.7;
+}
+
 footer {
     color: white;
     background-image: linear-gradient(rgba(128, 163, 162, 0.7), rgba(171, 206, 207, 0.7)),
         url("../src/images/matosinhos.avif");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 70px 0;
+    padding: 30px 0;
 }
 
 footer h3 {
@@ -120,5 +166,14 @@ footer a {
 
     header h3 {
         font-size: 12px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+    }
+
+    section {
+        padding: 30px;
     }
 }
