@@ -1,37 +1,79 @@
 body {
     font-family: "Poppins", sans-serif;
-    background-image: linear-gradient(to bottom, #80a3a2, #abcecf, #c4dce0, #daf4f5);
-    background-repeat: no-repeat;
+    background-color: #80a3a2;
 }
 
 .container {
     max-width: 1400px;
     margin: 0 auto;
-}
-
-.grid {
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .grid {
     display: grid;
-    grid-gap: 64px
-}
-
-.img-responsive {
+    grid-gap: 64px;
+  }
+  
+  .img-responsive {
     max-width: 100%;
     height: auto;
-}
-
-.grid-2-columns {
+  }
+  
+  .grid-2-columns {
     grid-template-columns: 1fr 1fr;
     align-items: center;
-}
-
-.grid-3-columns-with-first-narrow {
+  }
+  
+  .grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .grid-3-columns-with-first-narrow {
     grid-template-columns: 1fr 2fr 2fr;
+  }
+  
+  .card {
+    background: white;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-body {
+    padding: 30px;
+  }
+  
+  .card-footer {
+    padding: 0 30px 30px;
+    margin-top: auto;
+  }
+
+.btn {
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 16px;
+    background-color: #80a3a2;
+    text-decoration: none;
 }
 
 section {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px;
+}
+
+section.secondary {
+    background: #c4dce0;
 }
 
 header {
@@ -47,9 +89,8 @@ header {
 header h1 {
     font-weight: 700;
     font-size: 96px;
-    line-height: 40px;
     line-height: 1.5;
-    margin: 0;
+    margin: 30px 0;
 }
 
 header h2 {
@@ -69,7 +110,7 @@ header h3 {
 
 header a {
     text-decoration: none;
-    color: #272044;
+    color: #80a3a2;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
@@ -105,9 +146,26 @@ main h3 {
     margin: 0;
 }
 
+main h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: #80a3a2;
+    margin: 0;
+}
+
+main h5 {
+    font-weight: 700;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1;
+    color: #80a3a2;
+}
+
 main p {
     font-style: normal;
     font-weight: 400;
+    font-size: 16px;
     line-height: 1.5;
     color: #80a3a2;
     opacity: 0.7;
@@ -119,7 +177,7 @@ footer {
         url("../src/images/matosinhos.avif");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 30px 0;
+    padding: 10px;
 }
 
 footer h3 {
@@ -132,7 +190,6 @@ footer p {
     font-weight: 400;
     font-size: 16px;
     opacity: 0.7;
-    margin-right: 20px;
     line-height: 24px;
 }
 
